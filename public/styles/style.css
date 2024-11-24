@@ -1,5 +1,5 @@
 body {
-    background-color: #006400;
+    background-color: #ffffff;
     font-family: 'Open Sans Condensed', sans-serif;
 }
 
@@ -8,8 +8,9 @@ a {
 }
 
 
+
 .logo-small {
-    width: 100px; 
+    width: 200px; 
     height: auto;
     margin-right: 20px; 
 }
@@ -33,10 +34,17 @@ a {
 }
 
 .top-nav li a {
-    color: #ffffff;
+    color: #000000;
     text-decoration: none;
     font-weight: bold; /* Letras más gruesas */
 }
+
+/* Aumentar el tamaño de la letra de las secciones de navegación */
+.navbar-nav .nav-link {
+    font-size: 1.5rem; /* Puedes ajustar este valor para hacerlo más grande */
+    font-weight: bold; /* Opcional, para hacer el texto más grueso */
+}
+
 
 .top-nav li a:hover, .top-nav li a:focus {
     color: #006400;
@@ -196,7 +204,7 @@ a.product-name:hover, a.product-name:focus {
 }
 
 .logo-medium {
-    width: 190px; 
+    width: 100px; 
     height: auto;
     margin-top: 10px; 
 }
