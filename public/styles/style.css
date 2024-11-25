@@ -14,6 +14,7 @@ a {
     margin-right: 20px; 
 }
 
+
 .top-nav {
     margin: 0;
     padding: 0;
@@ -40,14 +41,17 @@ a {
 
 /* Aumentar el tamaño de la letra de las secciones de navegación */
 .navbar-nav .nav-link {
-    font-size: 1.5rem; /* Puedes ajustar este valor para hacerlo más grande */
-    font-weight: bold; /* Opcional, para hacer el texto más grueso */
+    color: #ffffff !important;
+    font-size: 1.5rem; 
+    font-weight: bold; 
 }
 
 
-.top-nav li a:hover, .top-nav li a:focus {
+.navbar-nav .nav-link:hover, .navbar-nav .nav-link:focus {
     color: #006400;
 }
+
+
 
 
 .site-logo {
@@ -147,6 +151,13 @@ a.product-name:hover, a.product-name:focus {
     font-weight: 600;
 }
 
+.bg-custom {
+    background-color: #006400;
+}
+
+.bg-custom .large-text {
+    color: white;
+}
 
 
 
@@ -408,3 +419,4 @@ table td img {
     }
 
 }
+
