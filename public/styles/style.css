@@ -41,7 +41,6 @@ a {
 
 /* Aumentar el tamaño de la letra de las secciones de navegación */
 .navbar-nav .nav-link {
-    color: #ffffff !important;
     font-size: 1.5rem; 
     font-weight: bold; 
 }
@@ -51,7 +50,10 @@ a {
     color: #006400;
 }
 
+.hover-effect:hover {
+    color: #006400 !important;
 
+}
 
 
 .site-logo {
