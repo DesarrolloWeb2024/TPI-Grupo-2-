@@ -9,7 +9,7 @@ a {
 
 
 .logo-small {
-    width: 100px; 
+    width: 200px; 
     height: auto;
     margin-right: 20px; 
 }
@@ -38,9 +38,17 @@ a {
     font-weight: bold; /* Letras más gruesas */
 }
 
+/* Aumentar el tamaño de la letra de las secciones de navegación */
+.navbar-nav .nav-link {
+    font-size: 1.5rem; /* Puedes ajustar este valor para hacerlo más grande */
+    font-weight: bold; /* Opcional, para hacer el texto más grueso */
+}
+
+
 .top-nav li a:hover, .top-nav li a:focus {
     color: #006400;
 }
+
 
 .site-logo {
     font-size: 2rem;
@@ -139,6 +147,9 @@ a.product-name:hover, a.product-name:focus {
     font-weight: 600;
 }
 
+
+
+
 .footer-logo {
     font-size: 1.65rem;
     font-family: 'Righteous', cursive;
@@ -159,7 +170,7 @@ a.product-name:hover, a.product-name:focus {
 }
 
 .footer-logo a, .footer-nav a{
-    color: #316dee;
+    color: #ffffff;
     text-decoration: none;
 }
 
@@ -170,7 +181,7 @@ a.product-name:hover, a.product-name:focus {
 .col-13 {
     max-width: 600px;
     color: #ffffff;
-    font-size: 16px;
+    font-size: 20px;
     text-align: center;
     margin-left: 80%;
     margin-right: auto;
