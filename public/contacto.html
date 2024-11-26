@@ -34,7 +34,7 @@
                             <a class="nav-link hover-effect" style="color: #ffffff;" href="index.html">| Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link hover-effect" style="color: #ffffff;" href="#productos">| Productos</a>
+                            <a class="nav-link hover-effect" style="color: #ffffff;" href="index.html#productos">| Productos</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link hover-effect" style="color: #ffffff;" href="quienessomos.html">| ¿Quiénes somos?</a>
@@ -52,38 +52,22 @@
                 <h2 class="text-center titulo1">¡Si querés contactarte con nosotros, te dejamos dónde podés encontrarnos!</h2>
                 <p class="icono">
                     <img src="/public/images/iconowsp.png" alt="Icono de Whatsapp" width="30" height="30">
-                    <a href="https://whatsapp.com/" target="_blank">1132676645</a>
+                    <a style="color: #ffffff;" href="https://whatsapp.com/" target="_blank">1132676645</a>
                     </p>
                     <p class="icono">
                         <img src="/public/images/iconoinstagram.png" alt="Icono de Instagram" width="30" height="30">
-                        <a href="https://instagram.com/" target="_blank">Mundo Natural</a>
+                        <a style="color: #ffffff;" href="https://instagram.com/" target="_blank">Mundo Natural</a>
                     </p>
                     <p class="icono">
                         <img src="/public/images/iconofacebook.png" alt="Icono de Facebook" width="30" height="30">
-                        <a href="https://facebook.com/" target="_blank">Mundo Natural</a>
+                        <a style="color: #ffffff;" href="https://facebook.com/" target="_blank">Mundo Natural</a>
                     </p>
                     <p class="icono">
                         <img src="/public/images/iconotwitter.png" alt="Icono de Twitter" width="30" height="30">
-                        <a href="https://twitter.com/" target="_blank">@mundonatural</a>
+                        <a style="color: #ffffff;" href="https://twitter.com/" target="_blank">@mundonatural</a>
                     </p>      
             </div>
-            
-         <form>
-                 <h2> Contacto </h2>
-                    <label>Nombre y apellido:</label>
-                 <input type="text" placeholder="Nombre y apellido">
-                 <br>
-                   <label>Teléfono:</label>
-                 <input type="number" placeholder="1127874439">
-                 <br>
-                   <label>Email:</label>
-                 <input type="email" placeholder="katherinediana99@gmail.com">
-                 <br>
-                   <label>Mensaje:</label>
-                 <textarea cols="20" rows="10"></textarea>
-                 <br>
-                 <button type="submit">Enviar</button>
-             </form>
+             <br><br>
               <div class="contacto-datos" id="contacto">
                  <h2 class="text-center titulo1">NUESTRA UBICACIÓN EN EL MAPA</h2>
                  <ul class="datos text-center titulo1">
@@ -96,27 +80,23 @@
        
              <section id="contacto" class=" py-5">
                 <div class="container">
-                    <h2 class="text-center mb-4 titulo1">Déjanos tu Reseña</h2>
-                    <p class="text-center mb-4 titulo1">Queremos saber tu opinión. Por favor, llena el siguiente formulario con tus comentarios.</p>
-                    <form action="procesar_resena.php" method="POST">
-                        <div class="row">
-                            <!-- Nombre -->
-                            <div class="col-md-6 mb-3">
-                                <label for="nombre" class="form-label">Tu Nombre</label>
-                                <input type="text" class="form-control" id="nombre" name="nombre" required>
-                            </div>
-                            <!-- Correo -->
-                            <div class="col-md-6 mb-3">
-                                <label for="correo" class="form-label">Tu Correo Electrónico</label>
-                                <input type="email" class="form-control" id="correo" name="correo" required>
-                            </div>
-                        </div>
-                        <!-- Reseña -->
-                        <div class="mb-3">
-                            <label for="resena" class="form-label">Tu Reseña</label>
-                            <textarea class="form-control" id="resena" name="resena" rows="4" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Enviar Reseña</button>
+                    <h1 class="text-center mb-4 titulo1">CONTACTO</h1>
+                    <p class="text-center mb-4 titulo1">Te gustaria tener más información sobre nuestros producto o querés dejarnos un comentario u opinión. Por favor, llena el siguiente formulario con tus comentarios.</p>
+                    
+                    <form   action="https://formspree.io/f/mpwzyqan" class="col-12" method="POST">
+                        <label>Nombre y apellido:</label>
+                        <input type="text" class="form-control" id="nombre" name="nombre" required placeholder="Nombre y apellido">
+                        <br>
+                          <label>Teléfono:</label>
+                          <input type="number" class="form-control" id="telefono" name="telefono" required placeholder="1127874439">
+                          <br>
+                          <label>Email:</label>
+                          <input type="email" class="form-control" id="correo" name="correo" required placeholder="katherinediana99@gmail.com">
+                          <br>
+                          <label>Mensaje:</label>
+                        <textarea cols="10" rows="10" name="mensaje"></textarea>
+                        <br>
+                        <button type="submit">Enviar</button>
                     </form>
                 </div>
             </section>
