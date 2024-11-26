@@ -425,7 +425,7 @@ table td img {
 /*Pagina de contacto*/
  
 form {
-    background-image: linear-gradient(to right, #0c84a7, #009ab0, #00ad9c, #00bc6c, #3bc610);
+    background-color: #212529;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(250, 246, 246, 0.952);
@@ -434,11 +434,16 @@ form {
     margin: 20px auto;
 }
 
+form h2 {
+    color: #ffffff; /* Cambia el color del texto a negro */
+}
+
+
 /* Estilo para las etiquetas del formulario */
 label {
     display: block;
     margin-bottom: 8px;
-    color: #070000;
+    color: #ffffff;
 }
 
 /* Estilo general para los inputs y textarea */
@@ -459,7 +464,7 @@ input[type="number"], input[type="text"], input[type="email"] {
 button {
     width: 100%;
     padding: 10px;
-    background-color: #000809;
+    background-color: #0d6efd;
     border: none;
     color: white;
     border-radius: 5px;
@@ -469,8 +474,26 @@ button {
 
 /* Estilo cuando el botón de envío es presionado */
 button:hover {
-    background-color: #cb3ab8;
+    background-color: #0e572cc0;
 }
+
+.icono {
+    display: flex;             /* Usamos Flexbox para alinear los iconos y enlaces */
+    align-items: center;       /* Centra verticalmente los elementos dentro del párrafo */
+    justify-content: center;   /* Centra horizontalmente los elementos dentro del párrafo */
+    margin: 10px 0;            /* Espacio entre cada párrafo */
+    font-weight: bold; /* Negrita en el texto de las redes sociales */
+    font-size: 18px; /* Agranda el texto */
+    
+}
+
+.icono a {
+    margin-right: 350px;        /* Espacio entre el icono y el enlace */
+    font-weight: bold; /* Negrita solo en los enlaces */
+    font-size: 19px; /* Tamaño de fuente específico para los enlaces */
+}
+
+
 
 /* Estilo para la sección de datos de contacto */
 #contact {
@@ -482,6 +505,7 @@ button:hover {
 .contacto-datos h2 {
     font-size: 25px;
     margin-bottom: 20px;
+    font-weight: bold;
 }
 
 .contacto-datos .datos {
@@ -489,11 +513,14 @@ button:hover {
     margin: 0;
     padding: 0;
     font-size: 18px;
+    font-weight: bold;
 }
 
 .contacto-datos .datos li {
     margin-bottom: 10px;
 }
+
+
 
 /* Estilo para el mapa de contacto */
 .mapa-contact iframe {
@@ -511,7 +538,7 @@ a {
 }
 
 a:hover {
-    color: #cb3ab8;
+    color: #ffffff;
 }
 
 /* Estilo para los íconos de redes sociales */
@@ -527,6 +554,8 @@ img {
     background-color: white;
     padding: 50px 0;
     text-align: center; /* Centra el texto (título) */
+    font-weight: bold;
+    
 }
 
 /* Estilo para el título dentro de la sección de contacto */
@@ -535,6 +564,7 @@ img {
     margin-bottom: 20px;
     text-align: center; /* Centra el título */
 }
+
 
 /* Estilo para el mapa de contacto */
 .mapa-contact {
@@ -552,15 +582,6 @@ img {
     border: 0;
 }
 
-/* Pagina ¿Quienes somos?*/
-
-.fondo {
-    background-image: url(/public/images/banner\ 2.PNG);
-    
-
-}
-
-
 .titulo1 {
     margin-top: 20px;
     color: #ffffff;
@@ -576,3 +597,49 @@ img {
     justify-content: center; 
 
 }
+
+.titulo1 {
+    font-weight: bold;
+    font-size: 25px; 
+
+}
+
+
+/* Pagina ¿Quienes somos?*/
+
+main {
+    border-radius: 10px; /* Bordes redondeados opcionales */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para resaltar el contenido */
+}
+
+.titulo {
+    font-weight: bold;
+    color: black;
+    font-size: 48px;
+}
+
+.texto {
+    font-weight: bold;
+    color: black;
+    font-size: 25px;
+}
+
+.containeruno {
+    display: flex;
+    flex-direction: column; /* Para que los párrafos estén uno debajo del otro */
+    align-items: center; /* Para centrar los elementos */
+    padding: 20px;
+}
+
+.cuadro-blanco {
+    background-color: white; /* Color de fondo blanco */
+    border: 2px solid black; /* Borde de color negro */
+    padding: 20px; /* Espacio dentro del cuadro */
+    margin: 15px 0; /* Espacio entre los cuadros */
+    width: 80%; /* Puedes ajustar el ancho del cuadro */
+    text-align: justify; /* Ajusta el texto dentro del cuadro */
+}
+
+
+
+
