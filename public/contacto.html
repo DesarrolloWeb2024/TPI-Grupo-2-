@@ -48,23 +48,26 @@
         </nav>
         <!-- Fin de la barra de navegación -->
         <main>
-            <h1>¿Tenés dudas? ¡Te mostramos todos nuestro medios de contacto, respondemos rápido! </h1>
-                 <p>
-         <img src="/public/images/iconowsp.png" alt="Icono de Whatsapp" width="30" height="30">
-         <a href="https://whatsapp.com/" target="_blank">1132676645</a>
-                </p>
-                <p>
-         <img src="/public/images/iconoinstagram.png" alt="Icono de Instagram" width="30" height="30">
-         <a href="https://instagram.com/" target="_blank">Mundo Natural</a>
-                </p>
-                <p>
-         <img src="/public/images/iconofacebook.png" alt="Icono de Facebook" width="30" height="30">
-         <a href="https://facebook.com/" target="_blank">Mundo Natural</a>
-                </p>
-                <p>
-         <img src="/public/images/iconotwitter.png" alt="Icono de Twitter" width="30" height="30">
-         <a href="https://twitter.com/" target="_blank">@mundonatural</a>
-                </p>      
+            <div>
+                <h2 class="text-center titulo1">Si querés contactarte con nosotros, te dejamos dónde podés encontrarnos</h2>
+                <p class="icono">
+                    <img src="/public/images/iconowsp.png" alt="Icono de Whatsapp" width="30" height="30">
+                    <a href="https://whatsapp.com/" target="_blank">1132676645</a>
+                    </p>
+                    <p class="icono">
+                        <img src="/public/images/iconoinstagram.png" alt="Icono de Instagram" width="30" height="30">
+                        <a href="https://instagram.com/" target="_blank">Mundo Natural</a>
+                    </p>
+                    <p class="icono">
+                        <img src="/public/images/iconofacebook.png" alt="Icono de Facebook" width="30" height="30">
+                        <a href="https://facebook.com/" target="_blank">Mundo Natural</a>
+                    </p>
+                    <p class="icono">
+                        <img src="/public/images/iconotwitter.png" alt="Icono de Twitter" width="30" height="30">
+                        <a href="https://twitter.com/" target="_blank">@mundonatural</a>
+                    </p>      
+            </div>
+            
          <form>
                  <h2> Contacto </h2>
                     <label>Nombre y apellido:</label>
@@ -82,16 +85,81 @@
                  <button type="submit">Enviar</button>
              </form>
               <div class="contacto-datos" id="contacto">
-                 <h2>NUESTRA UBICACIÓN EN EL MAPA</h2>
-                 <ul class="datos">
+                 <h2 class="text-center titulo1">NUESTRA UBICACIÓN EN EL MAPA</h2>
+                 <ul class="datos text-center titulo1">
                      <li>&#x1F4CD; Av. Pte. J. D. Peron 2268 San Miguel</li>
                  </ul>
              </div>
              <div class="mapa-contact">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3286.681438665007!2d-58.72250352441775!3d-34.536298072978475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcbd6a26222857%3A0xe7a0239d09bf71bf!2sAv.%20Pte.%20J.%20D.%20Per%C3%B3n%202268%2C%20B1663GHY%20San%20Miguel%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1732576868825!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3286.681438665007!2d-58.72250352441775!3d-34.536298072978475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcbd6a26222857%3A0xe7a0239d09bf71bf!2sAv.%20Pte.%20J.%20D.%20Per%C3%B3n%202268%2C%20B1663GHY%20San%20Miguel%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1732576868825!5m2!1ses-419!2sar" width="1200" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
              </div>
        
-     
+             <section id="contacto" class=" py-5">
+                <div class="container">
+                    <h2 class="text-center mb-4 titulo1">Déjanos tu Reseña</h2>
+                    <p class="text-center mb-4 titulo1">Queremos saber tu opinión. Por favor, llena el siguiente formulario con tus comentarios.</p>
+                    <form action="procesar_resena.php" method="POST">
+                        <div class="row">
+                            <!-- Nombre -->
+                            <div class="col-md-6 mb-3">
+                                <label for="nombre" class="form-label">Tu Nombre</label>
+                                <input type="text" class="form-control" id="nombre" name="nombre" required>
+                            </div>
+                            <!-- Correo -->
+                            <div class="col-md-6 mb-3">
+                                <label for="correo" class="form-label">Tu Correo Electrónico</label>
+                                <input type="email" class="form-control" id="correo" name="correo" required>
+                            </div>
+                        </div>
+                        <!-- Reseña -->
+                        <div class="mb-3">
+                            <label for="resena" class="form-label">Tu Reseña</label>
+                            <textarea class="form-control" id="resena" name="resena" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar Reseña</button>
+                    </form>
+                </div>
+            </section>
          </main>
+         <footer class="row">
+            <div class="col-12 bg-dark text-white pb-3 pt-5">
+                <div class="row">
+                    <div class="col-lg-2 col-sm-4 text-center text-sm-left mb-sm-0 mb-3">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="footer-logo">
+                                    <a href="index.html">Mundo Natural</a>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <address>
+                                    Av. Pte. J. D. Peron 2268 San Miguel,<br>
+                                    Buenos Aires, Argentina
+                                </address>
+                            </div>
+                            <div class="col-12">
+                                <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                                <a href="#" class="social-icon"><i class="fab fa-pinterest-p"></i></a>
+                                <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                                <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-8 text-center text-sm-left mb-sm-0 mb-3">
+                        <div class="row">
+                            <div class="col-13 ">
+                                <p>&copy; 2024 MUNDO NATURAL. TODOS LOS DERECHOS RESERVADOS.</p>
+                    
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 ms-auto text-center text-lg-right">
+                        <img src="images/mundo natural logo.jfif" alt="Logo mediano" class="logo-medium" style="width: 120px; height: 120px;">
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Footer -->
      </body>
      </html>

@@ -547,8 +547,8 @@ img {
 /* Estilo para el iframe del mapa */
 .mapa-contact iframe {
     width: 100%;
-    max-width: 600px;
-    height: 300px;
+    max-width: 1200px;
+    height: 400px;
     border: 0;
 }
 
@@ -561,4 +561,18 @@ img {
 }
 
 
+.titulo1 {
+    margin-top: 20px;
+    color: #ffffff;
+}
 
+.icono {
+    margin-left: 300px;
+    color: #ffffff;
+}
+
+.seccion {
+    align-items: center;
+    justify-content: center; 
+
+}
