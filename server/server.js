@@ -64,7 +64,7 @@ app.get('/api/products', (req, res) => {
       id: 8,
       name: 'Harina de Almentras x200g Natural Seed',  
       oldPrice: 6300, 
-      price: 5690, 
+      price: 5650, 
       urlImg: 'https://latiendadelceliaco.com.ar/wp-content/uploads/2021/04/HARINA-DE-ALMENDRAS-NATURAL-SEED.jpg' 
     },
 
